@@ -1,0 +1,21 @@
+.contactListItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactListItem:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.contact {
+  margin: 0;
+}
+
+.buttonDelete {
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 400;
+  background: rgb(165, 165, 248);
+}
