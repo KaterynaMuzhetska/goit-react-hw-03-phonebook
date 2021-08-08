@@ -33,13 +33,13 @@ class ContactForm extends Component {
 
     if (this.findByName(name)) {
       alert(`${name} is already in contacts!`);
+      this.reset();
       return;
     }
-
     this.props.onSubmit(this.state);
     this.reset();
   };
-
+  
   reset = () => {
     this.setState({ name: '', number: '' });
   };
